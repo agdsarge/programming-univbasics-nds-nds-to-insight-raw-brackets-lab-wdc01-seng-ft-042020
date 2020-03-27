@@ -29,8 +29,9 @@ def directors_totals(nds)
     result[director_name] = dir_gross
     nds_index += 1
   end
-    
-  
 
   return result
 end
+
+nds_index(directors_database)
+
