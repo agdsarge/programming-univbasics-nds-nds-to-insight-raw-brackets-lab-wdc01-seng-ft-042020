@@ -33,5 +33,5 @@ def directors_totals(nds)
   return result
 end
 
-nds_index(directors_database)
+directors_totals(directors_database)
 
