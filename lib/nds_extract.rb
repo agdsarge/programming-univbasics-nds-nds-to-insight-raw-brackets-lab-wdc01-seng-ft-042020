@@ -23,7 +23,7 @@ def directors_totals(nds)
     filmography = nds[nds_index][:movies] # array of hashes
     film_index = 0
       while film_index < filmography.length do
-        dir_gross += filmography[film_index][:worldwide_gross]
+        dir_gross += filmography[film_index][:worldwide_gross] #int
         film_index += 1
       end
     result[director_name] = dir_gross
