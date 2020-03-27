@@ -12,6 +12,10 @@ def directors_totals(nds)
   # The Hash result be full of things like "Jean-Pierre Jeunet" => "222312123123"
   
   require 'pp'
+  #nds, the input, is an Array of Hashes.
+  nds_index = 0
+  while nds_index < nds.length
+  
   result = {
   }
   
