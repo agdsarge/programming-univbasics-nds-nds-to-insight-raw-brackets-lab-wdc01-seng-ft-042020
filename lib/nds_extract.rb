@@ -1,8 +1,8 @@
 $LOAD_PATH.unshift(File.dirname(__FILE__))
 require 'directors_database'
+require 'pp'
 
-
-pp directors_database[0][:movies][0][:worldwide_gross]
+#pp directors_database[0][:movies][0][:worldwide_gross] #this is how to get the gross of one film
 
 def directors_totals(nds)
   # Remember, it's always OK to pretty print what you get *in* to make sure
