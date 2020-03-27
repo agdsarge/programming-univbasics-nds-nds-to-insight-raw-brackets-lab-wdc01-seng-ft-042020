@@ -3,7 +3,7 @@ require 'directors_database'
 
 require 'pp'
 pp directors_database.class
-pp directors_database
+pp directors_database[0][:movies][0][:worldwide_gross]
 
 def directors_totals(nds)
   # Remember, it's always OK to pretty print what you get *in* to make sure
