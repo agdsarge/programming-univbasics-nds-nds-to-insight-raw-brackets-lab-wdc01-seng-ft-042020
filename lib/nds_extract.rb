@@ -20,7 +20,7 @@ def directors_totals(nds)
   while nds_index < nds.length do
     dir_gross = 0
     director_name = nds[nds_index][:name] #string
-    filmography = nds[nds_index][:movies] # array of hashes
+    filmography = nds[nds_index][:movies] # array of hashes 
     film_index = 0
       while film_index < filmography.length do
         dir_gross += filmography[film_index][:worldwide_gross] #int
