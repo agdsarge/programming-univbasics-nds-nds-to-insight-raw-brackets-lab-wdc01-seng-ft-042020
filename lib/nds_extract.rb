@@ -33,5 +33,5 @@ def directors_totals(nds)
   return result
 end
 
-directors_totals(directors_database)
+puts directors_totals(directors_database)
 
