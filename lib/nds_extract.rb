@@ -1,8 +1,7 @@
 $LOAD_PATH.unshift(File.dirname(__FILE__))
 require 'directors_database'
 
-require 'pp'
-pp directors_database.class
+
 pp directors_database[0][:movies][0][:worldwide_gross]
 
 def directors_totals(nds)
@@ -11,6 +10,11 @@ def directors_totals(nds)
   #
   #
   # The Hash result be full of things like "Jean-Pierre Jeunet" => "222312123123"
+  ddb = nds
+  require 'pp'
+  
+  
+  
   result = {
   }
   #
