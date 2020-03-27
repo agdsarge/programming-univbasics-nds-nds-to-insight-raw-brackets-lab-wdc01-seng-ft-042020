@@ -14,19 +14,23 @@ def directors_totals(nds)
   require 'pp'
   #nds, the input, is an Array of Hashes.
   nds_index = 0
-  while nds_index < nds.length
-  
   result = {
   }
   
-  #
-  # Use loops, variables and the accessing method, [], to loop through the NDS
-  # and total up all the
-  # ...
-  # ...
-  # ...
-  #
-  #
-  # Be sure to return the result at the end!
-  return nil
+  while nds_index < nds.length do
+    dir_gross = 0
+    director_name = nds[nds_index][:name] #string
+    filmography = nds[nds_index][:movies] # array of hashes
+    film_index = 0
+      while film_index < filmography.length do
+        dir_gross += filmography[film_index][:worldwide_gross]
+        film_index += 1
+      end
+    result[director_name] = dir_gross
+    nds_index += 1
+  end
+    
+  
+
+  return result
 end
